@@ -1,8 +1,10 @@
 import { Row, Col, Form, Button, Modal } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 
 function PostModal(props) {
+	const dispatch = useDispatch();
 	const token = useSelector((state) => state.auth.jwt);
 	const { handleClosePostModal, postModalShow, postToBeUpdated, fetchPosts } =
 		props;
@@ -36,7 +38,7 @@ function PostModal(props) {
 			if (response.ok) {
 				const data = await response.json();
 				handleClosePostModal();
-				fetchPosts();
+				dispatch(fetchPosts(token));
 			} else {
 				const data = await response.json();
 			}
