@@ -4,7 +4,7 @@ How to setup the Project
 
 1. Clone the Repo
 2. Go to the directory in terminal and type > npm install
-3. Then type npm run dev - make sure the server is running on
+3. Then type npm run dev - make sure the server is running on http://localhost:5173/
 4. Configure .env.local, add below two entries
 
 VITE_SERVER_URL = "cornhub.ap-south-1.elasticbeanstalk.com"
