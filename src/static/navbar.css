@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "Catamaran";
+	src: url("/Catamaran-SemiBold.ttf") format("truetype");
+}
+
+.custom-navbar {
+	/* background-image: linear-gradient(
+		174.2deg,
+		rgba(255, 244, 228, 1) 7.1%,
+		rgba(240, 246, 238, 1) 67.4%
+	); */
+	background-color: black;
+	width: 99%;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgb(243, 198, 114);
+}
+
+.custom-navbar .navbar-brand {
+	color: #ff0000;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+	color: orange;
+	font-family: "Catamaran", sans-serif;
+	font-size: large;
+	margin: 2px 5px;
+	border-radius: 5px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+	background-color: #ffa500;
+	box-shadow: 0 0 5px rgb(255, 255, 255);
+	color: black;
+	border-radius: 2px;
+}
+
+.custom-navbar .navbar-toggler-icon {
+	/* background-color: #ffffff; */
+	background-image: url("/Add_square.svg");
+}
+
+.profile-icon {
+	/* background-color: #ffffff; */
+	height: 30px;
+	width: 30px;
+	background-image: url("/profile-icon.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+}
+
+.profile-icon:hover {
+	border-radius: 50% 50%;
+	box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.custom-dropdown-toggle::after {
+	content: none; /* Remove the ::after pseudo-element content */
+}
+
+.custom-navbar .navbar-collapse {
+	justify-content: space-around;
+}
+
+.btnNav {
+	height: 35px;
+	width: 35px;
+	border: none;
+	background: none;
+	border-radius: 50%;
+}
+
+.logo {
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.no-border {
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+/* Add this CSS class to rotate the icon when clicked */
+.toggled {
+	animation: rotateIcon 0.2s linear forwards;
+}
+
+@keyframes rotateIcon {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+
+.dropdown-item:hover {
+	background-color: orange;
+	color: black;
+	font-weight: 700;
+}
